@@ -32,6 +32,7 @@ source env/bin/activate
 
 ```py
 pip3 install -r requirements.txt
+pip3 install streamlit-chat
 ```
 
 ## API Keys
@@ -51,5 +52,5 @@ OPENAI_API_KEY='sk-foij....4hi3hi3j5h'
 ## Start the application
 
 ```py
-python main.py
+streamlit run main.py
 ```

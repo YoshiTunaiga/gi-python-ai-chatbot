@@ -1,53 +1,44 @@
-# Python appplication use for creating a simple chatbot using openai and colorama
+import streamlit as st
+from handlers import generate_response
 
-import openai
-import colorama
-from colorama import Fore, Back, Style
-import os
-from dotenv import load_dotenv
+# Streamlit App
+st.title("👨🏽‍💻 AI-Chatbot App")  # Add a title
+chat_placeholder = st.empty()
 
+# Chat history
+def init_chat_history():
+    if "messages" not in st.session_state:
+        st.session_state["messages"] = []
+        st.session_state.messages = [
+            {"role": "system", "content": "A Senior developer with a passion for teaching code and AI."}
+        ]
 
-load_dotenv()
+def start_chat():
+    # Display chat messages from history on app rerun
+    with chat_placeholder.container():
+        for message in st.session_state.messages:
+            if message["role"] != "system":
+                with st.chat_message(message["role"]):
+                    st.markdown(message["content"])
 
-# Set the API key
-# openai.api_key =
+        # Accept user input
+    if prompt := st.chat_input("How can I help you?"):
+        # Add user message to chat history
+        st.session_state.messages.append({"role": "user", "content": prompt})
 
-# Set the engine
-MODEL_ENGINE = "gpt-3.5-turbo"
-messages = [{"role": "system", "content": "Hello, I am a chatbot. I am here to help you with your queries."}]
+        # Display user message in chat message container
+        with st.chat_message("user"):
+            st.markdown(prompt)
 
-client = openai.OpenAI()
+        # Generate response from Chat models
+        response = generate_response(prompt, st.session_state.messages)
 
-def generate_response(user_input):
-    messages.append({"role": "user", "content": user_input})
-    response = client.chat.completions.create(
-        model=MODEL_ENGINE,
-        messages=messages,
-    )
-    messages.append(response.choices[0].message)
-    return response.choices[0].message["content"]
-
-def main():
-    colorama.init()
-    os.system("cls")
-    print(Fore.GREEN + "\n")
-    print("----------------------------------------\n")
-    print(" *** 🤖 WELCOME TO THE AI-CHATBOT *** ")
-    print("\n----------------------------------------")
-    print("\n================* MENU *================\n")
-    print(Fore.RED + "Type 'exit' to quit the chatbot")
-
-    while True:
-        user_input = input(Fore.YELLOW + "You: ")
-        if user_input.lower() == "exit":
-            break
-        messages.append({"role": "user", "content": user_input})
-
-         # Step 1: send the conversation and available functions to GPT
-        response = generate_response(user_input)
-        print(Fore.RED + "Chatbot: " + Fore.WHITE + response.content)
-        messages.append({"role": "system", "content": response.content})
-    colorama.deinit()
+        # message_placeholder.markdown(response)
+        with st.chat_message("assistant"):
+            st.markdown(response)
+        # Add assistant's response to chat history
+        st.session_state.messages.append({"role": "assistant", "content": response})
 
 if __name__ == "__main__":
-    main()
+    init_chat_history()
+    start_chat()

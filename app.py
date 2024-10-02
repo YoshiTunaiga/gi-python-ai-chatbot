@@ -53,7 +53,7 @@ PAGES = ["Dashboard", "Reports", "Account"]
 page = st.session_state['page']
 
 dashboard = st.Page(
-    "pages/dashboard.py",
+    "pages/Dashboard.py",
     title="Dashboard", 
     icon=":material/dashboard:", 
     default=(page=="Dashboard")

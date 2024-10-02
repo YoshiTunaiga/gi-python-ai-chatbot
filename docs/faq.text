@@ -1,0 +1,59 @@
+What’s it like to be a software engineer?
+Being a software engineer is dynamic and challenging. You constantly solve problems, create innovative solutions, and collaborate with teams to build products that impact users' lives.
+
+What drew you to a career in software development, and what keeps you motivated?
+I was drawn by the endless opportunities to learn and create. The constant innovation in tech and the satisfaction of seeing ideas turn into working software keep me motivated.
+
+How has your experience as a software engineer evolved over the years?
+Over time, I've transitioned from writing code to solving broader system-level challenges, mentoring others, and understanding the business side of software. Early in my career, it was more about learning technologies; now, it's about leveraging them effectively.
+
+What’s the most challenging aspect of being a software engineer?
+The most challenging part is managing complex problems under tight deadlines while ensuring the solution is scalable and maintainable. Balancing technical debt with delivering new features is always tricky.
+
+What is the most rewarding part of your job?
+Seeing a project come to life and knowing that it helps users is incredibly rewarding. It’s also fulfilling to look back at old projects and see how far you've progressed as a developer.
+
+How do you stay updated with new technologies, frameworks, and trends in the industry?
+I regularly read blogs, attend webinars, and experiment with new frameworks. Engaging with the developer community, whether through conferences or open-source projects, is also essential.
+
+What skills do you think are most important for success in this field?
+Problem-solving, strong communication, and adaptability are key. Technical skills are crucial, but your ability to understand the problem and communicate effectively with both technical and non-technical teams is invaluable.
+
+How do you handle stress or tight deadlines in your role?
+Planning and breaking tasks into smaller pieces help manage stress. It's also important to communicate early when you encounter roadblocks and set realistic expectations.
+
+Can you share any memorable projects that significantly impacted your growth as a developer?
+Early in my career, I worked on a project with tight constraints and a small team. It taught me the value of collaboration, testing under pressure, and how to handle production issues quickly.
+
+How much of your job is problem-solving versus writing code?
+Problem-solving is the bulk of the job. Writing code is just the final step. Most of the time, I’m breaking down problems, designing solutions, or reviewing the architecture before I even write a line of code.
+
+What does your typical day look like as a software engineer?
+My day involves a mix of coding, code reviews, and meetings. There’s always time dedicated to solving issues, collaborating with teammates, and refining new features or bug fixes.
+
+How do you prioritize tasks when you have multiple things on your plate?
+I prioritize based on business impact and deadlines. I also break larger tasks into smaller chunks to make progress visible and manageable, and I communicate regularly with the team.
+
+How much time do you spend coding versus meetings or other non-coding tasks?
+It depends on the role and project phase. Early on, coding takes up most of the time, but as a project matures, more time is spent in meetings, refining requirements, or discussing architecture with other teams.
+
+What does collaboration look like with other teams, like design or product management?
+Collaboration is constant. We frequently discuss requirements, iterate on designs, and align priorities. Engineers provide feedback on feasibility, while product and design teams ensure we’re building the right features.
+
+How do you handle bugs or issues that are difficult to troubleshoot?
+I take a systematic approach—start by isolating the problem, break it down, and reproduce it in a controlled environment. I also collaborate with teammates who might have different insights or experience with similar issues.
+
+How do you approach writing clean, maintainable code? What’s your process?
+I write code with readability and scalability in mind. I follow SOLID principles, keep functions small, and document complex areas. I also rely on code reviews to ensure quality.
+
+What tools or technologies do you use on a daily basis?
+Daily tools include IDEs like VSCode, Git for version control, Docker for containerization, and CI/CD pipelines for automating builds. We also use collaboration tools like Jira, Slack, and GitHub for project management and team communication.
+
+How do you break down complex features or requirements into smaller, manageable tasks?
+I start by understanding the big picture, then break it into smaller components or modules. Each small task is focused on a specific part of the system, which makes it easier to manage and track progress.
+
+How do you balance building new features with maintaining or refactoring older parts of the codebase?
+It’s a constant balancing act. I try to refactor when implementing new features if it makes the code cleaner. It’s also important to allocate specific time for technical debt and prioritize based on long-term benefits.
+
+What’s your process for reviewing other developers' code, and how do you give constructive feedback?
+When reviewing code, I look for logic correctness, readability, and adherence to best practices. I give feedback in a constructive way, focusing on improvement rather than criticizing, and I try to explain why something should be done differently.

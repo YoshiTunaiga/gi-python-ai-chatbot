@@ -1,5 +1,5 @@
 import streamlit as st
-from handlers import generate_chat_completion
+from handlers import generate_chat_completion, query
 
 st.title("👨🏽‍💻 Senior AI Developer")
 chat_placeholder = st.empty()
@@ -31,7 +31,8 @@ def start_chat():
             st.markdown(prompt)
 
         # Generate response from Chat models
-        response = generate_chat_completion(prompt, st.session_state.messages)
+        # response = generate_chat_completion(prompt, st.session_state.messages)
+        response = query(prompt)
 
         # message_placeholder.markdown(response)
         with st.chat_message("assistant"):

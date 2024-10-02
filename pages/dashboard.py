@@ -1,7 +1,7 @@
 import streamlit as st
-import time
+# import time
 import pandas as pd
-import numpy as np
+# import numpy as np
 
 st.set_page_config(page_title="Dashboard", page_icon="📈")
 
@@ -15,4 +15,4 @@ st.markdown("## Most Prescribed Drug from 2020 - 2024")
 new_data = pd.read_csv("/Users/gisseldiaz/Desktop/Gi Projects/gi_chatbot/most_prescribed_drug_20to24_2024_05_16.csv")
 
 
-st.bar_chart(new_data, x="gnrc_name", y="total_claims", x_label="Generic Drug Name", y_label="Total Claims per Drug")
+st.line_chart(new_data, x="gnrc_name", y="total_claims")
